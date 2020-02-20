@@ -1,0 +1,56 @@
+<?php include('server.php') ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style1.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <title> Log In </title>
+</head>
+<body>
+  <section id="login_form">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 offset-md-1">
+          <div class="row">
+            <div class="col-md-7 left">
+              <form action="login.php" method="post">
+                <h2> Log In Here </h2>
+                <div class="login_form">
+                  <div class="form-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1"><i class="fa fa-at"></i></span>
+                      <input type="text" name="username" class="form-control" placeholder="Your Name (username)" required>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1"><i class="fa fa-lock"></i></span>
+                      <input type="password" name="password" class="form-control" placeholder="Your Password" required>
+                    </div>
+                  </div>
+                  <button type="button" name="button2" class="btn btn-primary"> Log In </button>
+                  <p> Not a user? <a href="registration.html"> <b> Register </b> </a> </p>
+                </div>
+              </form>
+            </div>
+
+            <div class="col-md-3 right">
+              <h3> Join Us </h3>
+              <p> This is a test for basics. </p>
+              <button type="button" name="button" class="btn btn-primary"> About Us </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
